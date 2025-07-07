@@ -5,6 +5,57 @@ body {
   scroll-behavior: smooth;
 }
 
+/* Base Styles (your existing CSS) */
+
+/* Responsive Layouts */
+@media (max-width: 1200px) {
+  .hero-txt-cont h1 { font-size: 4.5rem; line-height: 1.1; }
+  .smart-cont { flex-direction: column; align-items: center; }
+  .smart-img-box { width: 100%; max-width: 400px; margin-bottom: 2rem; }
+  .custom-grid { display: block; padding: 2rem; }
+  .custom-grid img { width: 100%; margin-bottom: 1rem; height: auto; border-radius: 10px; }
+}
+
+@media (max-width: 768px) {
+  .navbar { flex-wrap: wrap; height: auto; padding: 1rem; }
+  .nav-links { order: 1; width: 100%; display: none; flex-direction: column; background: rgba(0,0,0,0.9); text-align: center; }
+  .nav-links.show { display: flex; }
+  .nav-links ul li { margin: 1rem 0; }
+  .nav-logo { order: 0; margin: 0 auto; }
+  .nav-button { order: 2; margin: 1rem auto; }
+  
+  .hero { padding: 3rem 1rem; }
+  .hero-txt-cont h1 { font-size: 3rem; }
+  .hero-txt-cont p { font-size: 1.2rem; }
+  .mask-left, .mask-yellow, .mask-right-yellow { position: static; top: auto; right: auto; bottom: auto; margin-top: 2rem; }
+  
+  .core-wordpress .cards-cont { flex-direction: column; gap: 2rem; padding-top: 5rem; }
+  .card { width: 80%; }
+  
+  .why-choose-us-page .img-cont { flex-direction: column; }
+  .img-card { width: 90%; align-items: center; }
+  
+  .smart-marketing-page { padding: 2rem 1rem; height: auto; }
+  .smart-txt-cont h1 { font-size: 2.5rem; }
+  .smart-txt-cont p { font-size: 1rem; max-width: 100%; }
+  
+  .services-page .scroll-img-cont { flex-direction: column; width: 100%; height: auto; margin-left: 0; gap: 1rem; }
+  .scroll-img-box { width: 100%; height: auto; padding: 2rem; }
+  
+  .dots-cont { top: 1rem; bottom: auto; position: static; }
+  .dots { position: static; flex-wrap: wrap; justify-content: center; margin-bottom: 2rem; }
+}
+
+/* Mobile-Specific */
+@media (max-width: 480px) {
+  .hero-txt-cont h1 { font-size: 2rem; }
+  .hero-txt-cont p { font-size: 1rem; }
+  .scroll-img-box h3 { font-size: 1.8rem; }
+  .scroll-img-box p { font-size: 1.1rem; }
+  .card-title h3 { font-size: 1.6rem; }
+  .card-txt p { font-size: 1rem; }
+  .nav-button a { font-size: 1rem; padding: .75rem 1rem; }
+}
 
 
 * {
@@ -225,12 +276,6 @@ div p {
   align-items: center;
 }
 
-.cards-cont,
-.img-cont {
-  flex-wrap: wrap;
-}
-
-
 
 
 .card:hover {
@@ -401,7 +446,7 @@ div p {
   justify-content: space-evenly;
   width: 100%;
   background-color: transparent;
-  margin: 40px;
+ 
 }
 
 .img-card {
@@ -523,10 +568,9 @@ div p {
 
 .smart-img-box {
   width: 27%;
-  height: auto;
   position: relative;
-
-
+  overflow: hidden;
+ 
 }
 
 .smart-img-box img {
@@ -534,6 +578,7 @@ div p {
   height: auto;
   position: absolute;
   bottom: 0;
+  
 }
 
 .smart-txt-box {
@@ -636,7 +681,7 @@ div p {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   gap: 2%;
 }
 
