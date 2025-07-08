@@ -531,13 +531,12 @@ div p {
   flex-direction: row;
   text-align: left;
   align-items: left;
-  justify-content: stretch;
+  justify-content: center;
 }
 
 .smart-img-box {
-  width: space-evenly;
+  width: auto;
   position: relative;
-
 }
 
 .smart-img-box img {
