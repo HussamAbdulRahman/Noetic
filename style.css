@@ -95,7 +95,7 @@ img {
 
 .nav-links ul li {
   list-style: none;
-  font-family: Raleway, sans-serif;
+  font-family: raleway, sans-serif;
   font-size: 19px;
 }
 
@@ -148,7 +148,7 @@ img {
 }
 
 div p {
-  font-family: Raleway, sans-serif;
+  font-family: raleway, sans-serif;
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
@@ -486,16 +486,19 @@ div p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+
 
 }
 
 .smart-txt-cont {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-direction: column;
   text-align: center;
+  position: relative;
+  top: 10vw;
 }
 
 .smart-txt-cont h1 {
@@ -504,6 +507,8 @@ div p {
   font-size: 4.5rem;
   line-height: 160%;
   letter-spacing: 0px;
+  position: relative;
+  top: 2.4vw;
 }
 
 .smart-txt-cont p {
@@ -513,7 +518,10 @@ div p {
   line-height: 180%;
   letter-spacing: 0px;
   color: #000000;
-  max-width: 47%
+  max-width: 47%;
+  position: relative;
+  bottom: 1vw;
+
 }
 
 .smart-cont {
@@ -538,7 +546,7 @@ div p {
   width: 350;
   height: 475px;
   position: relative;
-  top: 265px;
+  top: 210px;
 }
 
 .smart-txt-box {
@@ -552,6 +560,7 @@ div p {
   align-items: center;
   padding: 12.5% 0;
   margin-left: 3%;
+  gap: 12%;
 }
 
 .smart-txt-box p {
@@ -575,7 +584,7 @@ div p {
   justify-items: center;
   align-items: center;
   height: auto;
-  margin-top: 2%;
+  margin-top: 5.089%;
 }
 
 
@@ -584,7 +593,7 @@ div p {
   grid-column: 1;
   grid-row: 1;
   width: 271px;
-  height: 350px;
+  height: 320px;
   border-radius: 230%;
   object-fit: cover;
 }
@@ -594,7 +603,7 @@ div p {
   grid-column: 2;
   grid-row: 1;
   width: 290px;
-  height: 350px;
+  height: 300px;
   border-radius: 10px 10px 0 0;
   object-fit: cover;
 }
@@ -603,7 +612,7 @@ div p {
   grid-column: 1 / span 2;
   grid-row: 2;
   width: 650px;
-  height: 200px;
+  height: 165px;
   object-fit: cover;
 
 }
@@ -611,7 +620,7 @@ div p {
 .services-page {
 
   min-height: 100vh;
-  margin-top: 35vh;
+
 }
 
 .ser-cont h2 {
@@ -623,11 +632,12 @@ div p {
   font-weight: 700;
   line-height: 100%;
   letter-spacing: 0px;
-  margin: 3%;
+  margin: 10%;
+  position: relative;
+  top: 5vw;
 }
 
 .ser-cont {
-  padding-top: 8%;
   padding-right: 3%;
 }
 
@@ -643,6 +653,8 @@ div p {
   align-items: center;
   justify-content: space-around;
   gap: 2%;
+  position: relative;
+  top: -4vw;
 }
 
 .scroll-img-box {
@@ -692,7 +704,7 @@ div p {
   height: 10vh;
   background-color: rgb(255, 255, 255);
   position: relative;
-  top: 3vw;
+  top: -4vw;
 }
 
 .dots {
