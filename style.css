@@ -531,7 +531,6 @@ div p {
   display: flex;
   flex-direction: row;
   text-align: left;
-  display: flex;
   align-items: left;
   justify-content: stretch;
 }
@@ -556,11 +555,12 @@ div p {
   width: auto;
   max-width: 300px;
   height: auto;
-  background-color: #ffffff;
   align-items: center;
-  padding: 12.5% 0;
+  padding: 9vw 0;
   margin-left: 3%;
-  gap: 12%;
+  position: relative;
+  bottom: -3vw;
+
 }
 
 .smart-txt-box p {
@@ -634,7 +634,7 @@ div p {
   letter-spacing: 0px;
   margin: 10%;
   position: relative;
-  top: 5vw;
+  top: 10vw;
 }
 
 .ser-cont {
@@ -653,8 +653,6 @@ div p {
   align-items: center;
   justify-content: space-around;
   gap: 2%;
-  position: relative;
-  top: -4vw;
 }
 
 .scroll-img-box {
@@ -704,7 +702,7 @@ div p {
   height: 10vh;
   background-color: rgb(255, 255, 255);
   position: relative;
-  top: -4vw;
+  top: 3vw;
 }
 
 .dots {
