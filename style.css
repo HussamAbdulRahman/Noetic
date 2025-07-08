@@ -45,7 +45,6 @@ img {
 }
 
 .navbar {
-
   position: fixed;
   top: 0vh;
   left: 0;
@@ -133,7 +132,7 @@ img {
   justify-content: center;
   position: relative;
   bottom: 5rem;
-  left: 3rem;
+  left: 3.5rem;
 }
 
 .hero-txt-cont h1 {
@@ -551,16 +550,14 @@ div p {
 .smart-txt-box {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  width: auto;
-  max-width: 300px;
+  justify-content: space-evenly;
+  max-width: 370px;
   height: auto;
   align-items: center;
   padding: 9vw 0;
   margin-left: 3%;
   position: relative;
-  bottom: -3vw;
-
+  bottom: -4vw;
 }
 
 .smart-txt-box p {
